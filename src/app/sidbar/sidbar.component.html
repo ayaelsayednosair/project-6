@@ -1,0 +1,23 @@
+<div class="one">
+  <button class="btn btn-primary mx-2 text-black">click me</button>
+  <a class="btn btn-primary mx-2 text-black" href="#" role="button">Link</a>
+  <button class="btn btn-primary mx-2 text-black" type="submit">Button</button>
+  <input class="btn btn-secondary mx-2 text-black" type="button" value="Input">
+  <input class="btn btn-danger mx-2 text-black" type="submit" value="Submit">
+  <input class="btn btn-info mx-2 text-black" type="reset" value="Reset">
+</div><br>
+<div>{{name + (5+5) + name }}</div>
+<label class="my-3 mx-2">user name</label>
+<!-- two way biding -->
+<input type="text" [value]="username" name="username" [(ngModel)]="username"><br>
+<label class="my-3 mx-2">password</label>
+<input type="password" [value]="password" name="password"><br>
+<button [disabled]="numbervar===5" class="btn btn-info my-3 mx-2 text-black"> save</button><br>
+<button [disabled]="numbervar===3" class="btn  my-3 mx-2 text-black"> save</button><br>
+<button [disabled]="numbervar===5" [class.greenclass]="green"> save</button><br>
+<button class="btn text-black my-3 mx-2 " (click)="changecolor()"> save</button><br>
+<button class="btn btn-info my-3 mx-2" (click)="changecolor()"> save</button><br>
+<input #phone placeholder="number" type="text">
+<!-- change style -->
+<button type="button" (click)="callphone(phone.value)" [ngStyle]="titelstyle">save</button>
+<h1>{{username}}</h1>

@@ -1,0 +1,9 @@
+button{
+  color:white;
+  width:150px;
+  background:black;
+  margin:10px auto;
+display: flex;
+justify-content: center;
+border-radius: 10px;
+}
